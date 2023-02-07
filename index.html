@@ -101,7 +101,7 @@
             this.x = x || Math.random() * ww;
             this.y = y || Math.random() * wh;
             this.size = Math.random() * 1.3 + 1;
-            this.shadowBlur = Math.random() * 100;
+            this.shadowBlur = Math.random() * 2;
             this.speedX = (Math.random() + 0.2 - 0.6) * 2;
             this.speedY = (Math.random() + 0.2 - 0.6) * 2;
             this.speedSize = Math.random() * 0.03 + 0.01;
@@ -171,8 +171,6 @@
         window.addEventListener("resize", onResize);
         requestAnimationFrame(render);
 
-        window.addEventListener("resize", onResize);
-        requestAnimationFrame(render);
 
         window.onload = function timep() {
             timeDifference(`2022/12/1 00:00:00`, `我们在一起`, h1);
